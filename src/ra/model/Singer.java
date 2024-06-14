@@ -1,12 +1,9 @@
 package ra.model;
 
 public class Singer {
-    private static int idCounter = 0; // For auto-incrementing ID
-    private int singerId;
-    private String singerName;
-    private int age;
-    private String nationality;
-    private String genre;
+    private static int idCounter = 0;
+    private String singerName,nationality,genre;
+    private int age, singerId;
     private boolean gender;
 
     public Singer(String singerName, int age, String nationality, String genre, boolean gender) {

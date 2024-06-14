@@ -76,11 +76,11 @@ public class SingerService {
                 System.out.print("Tuổi: ");
                 if (scanner.hasNextInt()) {
                     age = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine();
                     break;
                 } else {
                     System.out.println("Tuổi phải là một số nguyên. Vui lòng nhập lại.");
-                    scanner.nextLine(); // Consume invalid input
+                    scanner.nextLine();
                 }
             }
             System.out.print("Quốc gia: ");
@@ -101,7 +101,6 @@ public class SingerService {
                 }
             }
 
-            // Create and add the new singer
             Singer newSinger = new Singer(name, age, nationality, genre, gender);
             singers = Arrays.copyOf(singers, singers.length + 1);
             singers[singers.length - 1] = newSinger;
@@ -119,11 +118,10 @@ public class SingerService {
                 singers[i].setSingerName(scanner.nextLine());
                 System.out.print("Tuổi: ");
                 singers[i].setAge(scanner.nextInt());
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine();
                 System.out.print("Quốc gia: ");
                 singers[i].setNationality(scanner.nextLine());
 
-                // Loop until a valid gender is entered
                 boolean validGender = false;
                 while (!validGender) {
                     System.out.print("Giới tính (Nam/Nữ): ");
@@ -157,7 +155,7 @@ public class SingerService {
         for (int i = 0; i < singers.length; i++) {
             if (singers[i].getSingerId() == id) {
                 System.arraycopy(singers, i + 1, singers, i, singers.length - 1 - i);
-                singers = Arrays.copyOf(singers, singers.length - 1); // Reduce the size of the array by 1
+                singers = Arrays.copyOf(singers, singers.length - 1);
                 found = true;
                 break;
             }

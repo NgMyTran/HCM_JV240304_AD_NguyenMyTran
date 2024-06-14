@@ -28,7 +28,7 @@ public class SongService {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập số lượng bài hát cần thêm: ");
         int numberOfSongs = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
         Song[] newSongs = new Song[numberOfSongs];
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date makingDate = null;

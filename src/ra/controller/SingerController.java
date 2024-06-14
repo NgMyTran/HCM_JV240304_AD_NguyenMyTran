@@ -26,7 +26,7 @@ public class SingerController {
             System.out.println("5. Thoát");
             System.out.print("Chọn: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:

@@ -22,7 +22,7 @@ public class MusicManagement {
             System.out.println("4. Thoát");
             System.out.print("Chọn: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
             switch (choice) {
                 case 1:
                     singerController.manageSingers();

@@ -38,7 +38,7 @@ public class SearchManagement {
             System.out.print("Chọn: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -85,7 +85,7 @@ public class SearchManagement {
     private void searchArtistByNameOrGenre() {
         System.out.println("Chọn 1 để tìm theo tên, 2 để tìm theo thể loại: ");
         int option = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (option) {
             case 1:
